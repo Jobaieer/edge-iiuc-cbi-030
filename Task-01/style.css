@@ -1,0 +1,145 @@
+@media screen and (min-width: 992px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-image: url("./bg-img.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-color: white;
+    background-position: center center;
+    width: 100%;
+  }
+
+  span {
+    color: skyblue;
+    padding: 20px 0px;
+  }
+
+  h3 {
+    padding: 20px 0px;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .signup-container {
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-image: linear-gradient(
+      120deg,
+      rgba(48, 196, 255, 0.1),
+      rgba(135, 206, 235, 0.2)
+    );
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  #tab-bg {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px;
+  }
+
+  .signup-upper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .signup-bottom {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 150px;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .btn-f:hover {
+    background-color: #1877f2;
+    cursor: pointer;
+  }
+
+  .btn-g:hover {
+    background-image: linear-gradient(
+      120deg,
+      #4285f4,
+      #db4437,
+      #f4b400,
+      #0f9d58
+    );
+    cursor: pointer;
+  }
+
+  .g path:hover {
+    fill: #0f9d58;
+  }
+
+  .f path:hover {
+    fill: #4285f4;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #email,
+  #password {
+    padding: 5px 5px;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    width: 25vw;
+  }
+
+  input::placeholder {
+    color: white;
+    border: none;
+  }
+
+  .login-btn {
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 10px;
+    width: 25.8vw;
+    padding: 5px 5px;
+    font-size: 1.2rem;
+  }
+
+  .login-btn:hover {
+    background-color: #318bff;
+    cursor: pointer;
+    color: skyblue;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
