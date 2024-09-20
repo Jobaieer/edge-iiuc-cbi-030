@@ -9,6 +9,7 @@ In this repo, I share my tasks and projects of this course.
 |  Task-No  | Date of Submitted |      About Task      |            Live-Server Link             |
 | :-------: | :---------------: | :------------------: | :-------------------------------------: |
 | `Task-01` |   `19/09/2024`    | Sign Up / Login Page | https://iiuc-cbi-030-task01-j.surge.sh/ |
+| `Task-02` |                   |  Portfolio Project   |                                         |
 
 ## 🔗 Connected with @jobaieer
 
