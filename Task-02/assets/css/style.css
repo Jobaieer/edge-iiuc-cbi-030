@@ -3,3 +3,266 @@
 ** Style CSS File
 ** Written by Jobaieer
 */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --primary-color: #fd6e0a;
+  --secondary-color: #ffcf90;
+  --ps-light: #fff8f3;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --gray-color: #757575;
+  --gray-02: #474747;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Re-useable Classes */
+
+.margin-ss {
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.section-title {
+  font-size: 2.1875rem;
+  font-weight: bold;
+}
+
+.para-desc {
+  color: var(--gray-color);
+  font-size: 1.125rem;
+}
+
+/** Header Container Start */
+#header {
+  background-color: var(--ps-light);
+}
+.header-container {
+  background-image: url(../img/developer.png), url(../img/header_bg.png);
+
+  background-repeat: no-repeat, no-repeat;
+  background-position: left center, right bottom;
+  background-size: 85px, 100vh;
+  padding: 10px 0px;
+  margin-left: 20px;
+}
+
+/* Navbar Section Start */
+#navbar {
+  margin-left: 180px;
+  margin-right: 200px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+span {
+  color: var(--primary-color);
+}
+
+#nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+#nav-menu li > a {
+  text-decoration: none;
+  color: var(--black-color);
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+#nav-menu li > a:hover {
+  color: var(--primary-color);
+}
+
+#btn-hm {
+  width: 150px;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--white-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  height: 65px;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+/* Navbar Section End */
+
+/* Hero Section Start */
+
+#hero-section {
+  padding-left: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#btn-dc {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#btn-co {
+  width: 160px;
+  background-color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  width: 580px;
+}
+
+.hero-left h3 {
+  color: var(--gray-02);
+  font-weight: semibold;
+  font-size: 2rem;
+  padding-bottom: 5px;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+}
+
+.hero-left p {
+  padding: 20px 0px;
+}
+
+.hero-right {
+  padding-right: 40px;
+}
+
+.hero-right img {
+  position: relative;
+  top: 15px;
+  height: 80vh;
+}
+
+/* Hero Section End */
+
+/** Header Container End */
+
+/** Main Container Start */
+
+/* About Section Start */
+
+#about-section {
+  background-color: var(--ps-light);
+  margin: 130px 0px;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.about-wrapper {
+  border: 1px solid var(--black-color);
+  background-color: var(--white-color);
+  margin: 0px 155px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-down {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.item h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--gray-color);
+}
+
+.i-c-h {
+  color: var(--black-color);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* About Section End */
+
+/* What I Do Section Start*/
+
+.wid-upper {
+  text-align: center;
+}
+
+.wid-upper p {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.wid-down-cards {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.card {
+  padding: 30px 33px;
+  background-color: var(--white-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.06), 0 0 10px rgba(0, 0, 0, 0.06);
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card h1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 30px 0px 20px 0px;
+}
+
+/* What I Do Section End */
