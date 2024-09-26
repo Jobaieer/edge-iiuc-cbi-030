@@ -258,4 +258,29 @@ span {
   }
 
   /* Instagram Section End */
+
+  /* Newsletter Section Start */
+  #newsletter-section {
+    background-image: url("../images/Rectangle\ 9.png");
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-bottom: 128px;
+  }
+
+  #email {
+    width: 500px;
+    height: 64px;
+    border: none;
+    border-radius: 8px;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  /* Newsletter Section End */
 }
