@@ -57,6 +57,10 @@ body {
   text-align: center;
 }
 
+span {
+  color: var(--primary-color);
+}
+
 @media (min-width: 1000px) {
   /* Header Container Start */
 
@@ -202,4 +206,32 @@ body {
   }
 
   /* Support Section End */
+
+  /* Offer Section Start */
+  #offer-section {
+    background-color: #e554730d;
+    padding: 100px 0px;
+  }
+
+  .offer-wrapper {
+    display: flex;
+    gap: 180px;
+    align-items: center;
+  }
+
+  .offer-left {
+    width: 60%;
+    text-align: center;
+  }
+
+  .offer-left p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .offer-right {
+    width: 40%;
+  }
+
+  /* Offer Section End */
 }
