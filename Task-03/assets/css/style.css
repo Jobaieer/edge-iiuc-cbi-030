@@ -283,4 +283,36 @@ span {
   }
 
   /* Newsletter Section End */
+  /* Main Container End */
+
+  /* Footer Section Start */
+  #footer-container {
+    background-color: var(--footer-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 128px 0px;
+    gap: 20px;
+  }
+
+  .white-c {
+    color: white;
+  }
+
+  .f-p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #ffffffe6;
+    text-align: center;
+    width: 500px;
+  }
+
+  .copyright-f {
+    font-size: 0.8rem;
+    color: #ffffff66;
+  }
+
+  /* Footer Section End */
 }
