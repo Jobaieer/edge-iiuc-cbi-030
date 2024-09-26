@@ -19,13 +19,42 @@
   --p-color: #27272799;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Reuseable Classes */
+
 .margin-ss {
   margin: 0px 140px;
 }
 
-body {
-  font-family: "Lato", sans-serif;
-  background-color: #f2f2f2;
+.btn {
+  width: 200px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 20px 43px;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: 200px;
+  height: 64px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.title-p {
+  font-size: 1.125rem;
+  color: var(--p-color);
+  text-align: center;
 }
 
 @media (min-width: 1000px) {
@@ -33,6 +62,7 @@ body {
 
   #header-container {
     background-color: var(--bg-color);
+    height: 100vh;
   }
 
   /* Hero Section Start */
@@ -44,12 +74,13 @@ body {
   }
 
   .hero-left h1 {
-    font-size: 4.5rem;
+    font-size: 4.3rem;
+    font-weight: 700;
     color: var(--text-color);
   }
 
   .hero-left p {
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: var(--p-color);
   }
 
@@ -59,28 +90,93 @@ body {
     gap: 32px;
   }
 
-  .btn {
-    width: 200px;
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    padding: 20px 43px;
-    border-radius: 8px;
-    font-size: 1.25rem;
-    font-weight: 500;
-    width: 200px;
-    height: 64px;
-    cursor: pointer;
-  }
-
   .hero-right {
     flex: 1;
   }
 
   .hero-right img {
-    width: 500px;
+    width: 520.5px;
   }
 
   /* Hero Section End */
   /* Header Container End */
+
+  /* Main Container Start */
+
+  #main-container {
+    margin-top: 150px;
+  }
+
+  /* Our Featured Flowers Section Start */
+
+  #off-section p {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    padding: 0px 280px;
+  }
+
+  .off-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .img-6 {
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    top: 1080.5px;
+  }
+  .img-7 {
+    width: 310px;
+    height: 450px;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .img-5 {
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+
+  .off-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg-p {
+    background: #a7216226;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+  }
+
+  .bg-s {
+    background: #0597a026;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+  }
+
+  .bg-g {
+    background: #477d1126;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+  }
+
+  .off-down {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 32px;
+    place-items: center;
+    margin-top: 30px;
+  }
+
+  .off-down h4 {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: var(--text-color);
+  }
+
+  /* Our Featured Flowers Section End */
 }
