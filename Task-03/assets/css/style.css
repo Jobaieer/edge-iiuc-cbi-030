@@ -234,4 +234,28 @@ span {
   }
 
   /* Offer Section End */
+
+  /* Instagram Section Start */
+
+  #instagram-section {
+    margin-top: 128px;
+    margin-bottom: 128px;
+  }
+
+  #instagram-section p {
+    padding-top: 24px;
+    padding-bottom: 30px;
+  }
+
+  .instagram-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+  }
+
+  .instagram-cards img {
+    width: 250px;
+  }
+
+  /* Instagram Section End */
 }
