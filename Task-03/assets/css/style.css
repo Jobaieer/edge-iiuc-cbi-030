@@ -179,4 +179,27 @@ body {
   }
 
   /* Our Featured Flowers Section End */
+
+  /* Support Section Start */
+
+  #support-section {
+    margin-top: 128px;
+    margin-bottom: 128px;
+  }
+
+  .support-bg {
+    background-color: #2727270d;
+    padding: 85px 170px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .support-card h4 {
+    padding-top: 20px;
+    color: var(--p-color);
+    font-weight: 400;
+  }
+
+  /* Support Section End */
 }
