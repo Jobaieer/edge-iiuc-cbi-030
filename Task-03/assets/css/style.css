@@ -3,3 +3,84 @@
 ** Style CSS File
 ** Written by Jobaieer
 */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #e55473;
+  --bg-color: #e554731a;
+  --footer-bg: #111010;
+  --text-color: #272727;
+  --p-color: #27272799;
+}
+
+.margin-ss {
+  margin: 0px 140px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: 1000px) {
+  /* Header Container Start */
+
+  #header-container {
+    background-color: var(--bg-color);
+  }
+
+  /* Hero Section Start */
+  #hero-section {
+    padding-top: 50px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .hero-left h1 {
+    font-size: 4.5rem;
+    color: var(--text-color);
+  }
+
+  .hero-left p {
+    font-size: 1.125rem;
+    color: var(--p-color);
+  }
+
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .btn {
+    width: 200px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 20px 43px;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    width: 200px;
+    height: 64px;
+    cursor: pointer;
+  }
+
+  .hero-right {
+    flex: 1;
+  }
+
+  .hero-right img {
+    width: 500px;
+  }
+
+  /* Hero Section End */
+  /* Header Container End */
+}
