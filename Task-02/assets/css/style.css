@@ -93,7 +93,7 @@ span {
   color: var(--primary-color);
 }
 
-#btn-hm {
+.btn-hm {
   width: 150px;
 }
 
@@ -123,7 +123,7 @@ span {
   gap: 20px;
 }
 
-#btn-dc {
+.btn-dc {
   width: 200px;
   display: flex;
   align-items: center;
@@ -131,7 +131,7 @@ span {
   gap: 10px;
 }
 
-#btn-co {
+.btn-co {
   width: 160px;
   background-color: var(--white-color);
   border: 1px solid var(--primary-color);
@@ -266,3 +266,139 @@ span {
 }
 
 /* What I Do Section End */
+
+/* Resume Section Start */
+
+#resume-section {
+  margin-top: 130px;
+}
+
+#resume-section > h1 {
+  text-align: center;
+}
+
+.button-dcc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 130px;
+}
+
+.resume-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-top: 100px;
+}
+
+.my-edu h3 {
+  color: #474747;
+  font-size: 1.2rem;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.resume-left > h3 {
+  font-size: 1.5rem;
+
+  color: #474747;
+}
+
+.resume-left h5 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+}
+
+.my-exp {
+  padding-bottom: 30px;
+}
+
+.my-exp h3 {
+  color: #474747;
+  font-size: 1.2rem;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.resume-right > h3 {
+  font-size: 1.5rem;
+  color: #474747;
+}
+
+.resume-right h5 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+}
+
+.meb {
+  border-bottom: 1px solid #d1d1d1;
+  padding-bottom: 30px;
+}
+
+/* Resume Section End */
+
+/* Footer Section Start */
+#footer {
+  background-color: var(--ps-light);
+  padding: 130px 0px;
+}
+
+.footer-wrapper {
+  display: flex;
+  gap: 115px;
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-left p {
+  color: var(--gray-color);
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.footer-right {
+  flex: 1;
+}
+
+.footer-right h1 {
+  padding-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#name,
+#email,
+#message {
+  border: none;
+  border-radius: 5px;
+  height: 6vh;
+  color: var(--gray-color);
+}
+
+#message {
+  border: none;
+  height: 10vh;
+  color: var(--gray-color);
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+  color: var(--gray-color);
+  font-family: "Open Sans", sans-serif;
+}
+
+.f-social {
+  display: flex;
+  gap: 24px;
+  cursor: pointer;
+}
