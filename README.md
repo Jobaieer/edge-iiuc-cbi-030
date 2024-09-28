@@ -6,11 +6,11 @@ In this repo, I share my tasks and projects of this course.
 
 ## 🖇️ Task Deployment
 
-|  Task-No  | Date of Submitted |      About Task      |            Live-Server Link             |
-| :-------: | :---------------: | :------------------: | :-------------------------------------: |
-| `Task-01` |   `19/09/2024`    | Sign Up / Login Page | https://iiuc-cbi-030-task01-j.surge.sh/ |
-| `Task-02` |                   |  Portfolio Project   |                                         |
-| `Task-03` |   `27/09/2024`    | Online Flowers Shop  | https://iiuc-cbi-030-task03-j.surge.sh/ |
+|  Task-No  | Date of Submitted |      About Task      |              Live-Server Link              |
+| :-------: | :---------------: | :------------------: | :----------------------------------------: |
+| `Task-01` |   `19/09/2024`    | Sign Up / Login Page |  https://iiuc-cbi-030-task01-j.surge.sh/   |
+| `Task-02` |   `27/09/2024`    |  Portfolio Project   | https://iiuc-cbi-030-task02-j.netlify.app/ |
+| `Task-03` |   `27/09/2024`    | Online Flowers Shop  |  https://iiuc-cbi-030-task03-j.surge.sh/   |
 
 ## 🔗 Connected with @jobaieer
 
