@@ -13,6 +13,7 @@
 
 :root {
   --primary-color: #e55473;
+  --primary-light-color: #ffb4c4;
   --bg-color: #e554731a;
   --footer-bg: #111010;
   --text-color: #272727;
@@ -44,6 +45,12 @@ body {
   cursor: pointer;
 }
 
+.btn:hover {
+  background-color: var(--primary-light-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
 .title {
   font-size: 2.5rem;
   font-weight: 800;
@@ -66,7 +73,6 @@ span {
 
   #header-container {
     background-color: var(--bg-color);
-    height: 100vh;
   }
 
   /* Hero Section Start */
@@ -99,7 +105,7 @@ span {
   }
 
   .hero-right img {
-    width: 520.5px;
+    width: 520px;
   }
 
   /* Hero Section End */
@@ -125,47 +131,38 @@ span {
     gap: 24px;
   }
 
-  .img-6 {
-    width: 250px;
-    height: 400px;
-    position: absolute;
-    top: 1080.5px;
-  }
-  .img-7 {
-    width: 310px;
-    height: 450px;
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .img-5 {
-    padding-top: 10px;
-    padding-left: 5px;
-  }
-
   .off-card {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 500px;
   }
 
   .bg-p {
     background: #a7216226;
-    border-top-left-radius: 300px;
-    border-top-right-radius: 300px;
+    background-image: url(../images/pngwing\ 6.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
   }
 
   .bg-s {
     background: #0597a026;
-    border-top-left-radius: 300px;
-    border-top-right-radius: 300px;
+    background-image: url(../images/pngwing\ 5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
   }
 
   .bg-g {
     background: #477d1126;
-    border-top-left-radius: 300px;
-    border-top-right-radius: 300px;
+    background-image: url(../images/pngwing\ 7.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
   }
 
   .off-down {
@@ -174,6 +171,11 @@ span {
     gap: 32px;
     place-items: center;
     margin-top: 30px;
+  }
+
+  .off-down h4:hover {
+    cursor: pointer;
+    color: var(--primary-color);
   }
 
   .off-down h4 {
@@ -263,6 +265,7 @@ span {
   #newsletter-section {
     background-image: url("../images/Rectangle\ 9.png");
     background-repeat: no-repeat;
+    background-size: cover;
     padding-top: 120px;
     padding-bottom: 120px;
     margin-bottom: 128px;
