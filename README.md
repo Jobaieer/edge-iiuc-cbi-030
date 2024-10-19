@@ -6,11 +6,12 @@ In this repo, I share my tasks and projects of this course.
 
 ## 🖇️ Task Deployment
 
-|  Task-No  | Date of Submitted |      About Task      |              Live-Server Link              |
-| :-------: | :---------------: | :------------------: | :----------------------------------------: |
-| `Task-01` |   `19/09/2024`    | Sign Up / Login Page |  https://iiuc-cbi-030-task01-j.surge.sh/   |
-| `Task-02` |   `27/09/2024`    |  Portfolio Project   | https://iiuc-cbi-030-task02-j.netlify.app/ |
-| `Task-03` |   `27/09/2024`    | Online Flowers Shop  | https://iiuc-cbi-030-task03-j.netlify.app/ |
+|  Task-No  | Date of Submitted |        About Task         |              Live-Server Link              |
+| :-------: | :---------------: | :-----------------------: | :----------------------------------------: |
+| `Task-01` |   `19/09/2024`    |   Sign Up / Login Page    |  https://iiuc-cbi-030-task01-j.surge.sh/   |
+| `Task-02` |   `27/09/2024`    |     Portfolio Project     | https://iiuc-cbi-030-task02-j.netlify.app/ |
+| `Task-03` |   `27/09/2024`    |    Online Flowers Shop    | https://iiuc-cbi-030-task03-j.netlify.app/ |
+| `Task-04` |   `20/10/2024`    | GenZ Fashion-Tailwind CSS | https://iiuc-cbi-030-task04-j.netlify.app/ |
 
 ## 🔗 Connected with @jobaieer
 
