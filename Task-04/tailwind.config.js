@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./dist/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        robota: ["Roboto", "sans-serif"],
+        bebas: ["Bebas Neue", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
