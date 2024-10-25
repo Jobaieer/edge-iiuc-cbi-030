@@ -4,328 +4,361 @@
   * Written by Jobaieer
   ======================================================== -->
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GenZ Fashion</title>
-
-    <!-- Link Tailwind File -->
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <!-- Header Start -->
-    <header class="px-[135px] pt-5 bg-amber-50 h-screen">
-      <!-- Navbar Start -->
-      <nav class="flex justify-between items-center">
-        <div class="flex items-center gap-4 cursor-pointer">
-          <img src="./assets/icons/logo.png" alt="gzf" />
-          <h1 class="text-[1.6rem] text-[#363958] font-bold font-montserrat">
-            <span class="text-[#A4BC46]">GenZ</span> Fashion
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>GenZ Fashion</title>
+  
+      <!-- Link Tailwind File -->
+      <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+      <!-- Header Start -->
+      <header class="px-3 pt-5 bg-amber-50 h-screen lg:px-[135px] lg:pt-10">
+        <!-- Navbar Start -->
+        <nav class="flex flex-row justify-between items-center">
+          <div class="flex items-center gap-4 cursor-pointer">
+            <img src="./assets/icons/logo.png" alt="gzf" />
+            <h1 class="text-[1.6rem] text-[#363958] font-bold font-montserrat">
+              <span class="text-[#A4BC46]">GenZ</span> Fashion
+            </h1>
+          </div>
+  
+          <div class="lg:hidden">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 16.25C5.69036 16.25 6.25 15.6904 6.25 15C6.25 14.3096 5.69036 13.75 5 13.75C4.30964 13.75 3.75 14.3096 3.75 15C3.75 15.6904 4.30964 16.25 5 16.25Z"
+                fill="black"
+              />
+              <path
+                d="M25.075 13.75H9.925C9.27607 13.75 8.75 14.2761 8.75 14.925V15.075C8.75 15.7239 9.27607 16.25 9.925 16.25H25.075C25.7239 16.25 26.25 15.7239 26.25 15.075V14.925C26.25 14.2761 25.7239 13.75 25.075 13.75Z"
+                fill="black"
+              />
+              <path
+                d="M25.075 20H4.925C4.27607 20 3.75 20.5261 3.75 21.175V21.325C3.75 21.9739 4.27607 22.5 4.925 22.5H25.075C25.7239 22.5 26.25 21.9739 26.25 21.325V21.175C26.25 20.5261 25.7239 20 25.075 20Z"
+                fill="black"
+              />
+              <path
+                d="M25.075 7.5H4.925C4.27607 7.5 3.75 8.02607 3.75 8.675V8.825C3.75 9.47393 4.27607 10 4.925 10H25.075C25.7239 10 26.25 9.47393 26.25 8.825V8.675C26.25 8.02607 25.7239 7.5 25.075 7.5Z"
+                fill="black"
+              />
+            </svg>
+          </div>
+  
+          <ul
+            class="hidden gap-14 content-center font-medium text-[#3C3C3C] font-robota lg:flex flex-row"
+          >
+            <li><a href="#" class="hover:text-[#A4BC46]">Home</a></li>
+            <li><a href="#" class="hover:text-[#A4BC46]">Product</a></li>
+            <li><a href="#" class="hover:text-[#A4BC46]">About Us</a></li>
+            <li><a href="#" class="hover:text-[#A4BC46]">Contact Us</a></li>
+          </ul>
+        </nav>
+        <!-- Navbar Start -->
+  
+        <!-- Hero Section Start -->
+        <section
+          class="flex flex-col lg:items-center lg:justify-between py-[50px] lg:flex-row"
+        >
+          <div class="flex-col lg:w-6/12">
+            <h1
+              class="text-8xl text-[#363958] font-normal uppercase leading-[1] font-bebas"
+            >
+              <span class="text-[#FABE4C]">Be the Genzs</span> <br />of Winter
+            </h1>
+            <p class="text-lg text-[#3E3E3E] mb-5 font-robota">
+              Lorem Ipsum is simply dummy text of the printing <br />and
+              typesetting industry.
+            </p>
+            <button
+              class="font-robota bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-lg px-[30px] py-[15px] text-center text-white uppercase flex gap-2 items-center"
+            >
+              <img
+                src="./assets/icons/shopping-cart 1.png"
+                alt="cart"
+                class="w-5"
+              />
+              Buy Now
+            </button>
+          </div>
+  
+          <div class="lg:w-6/12 flex justify-center">
+            <img src="./assets/images/model.png" alt="" class="" />
+          </div>
+        </section>
+        <!-- Hero Section End -->
+      </header>
+      <!-- Header End -->
+  
+      <!-- Main Start -->
+      <main class="px-3 lg:px-[135px] my-12">
+        <!-- Featured Women Product Section Start -->
+        <section class="my-12">
+          <h1 class="font-bebas text-[50px] text-[#363958] uppercase font-normal">
+            Women Jacket
           </h1>
-        </div>
-
-        <ul
-          class="flex gap-14 content-center font-medium text-[#3C3C3C] font-robota"
-        >
-          <li><a href="#" class="hover:text-[#A4BC46]">Home</a></li>
-          <li><a href="#" class="hover:text-[#A4BC46]">Product</a></li>
-          <li><a href="#" class="hover:text-[#A4BC46]">About Us</a></li>
-          <li><a href="#" class="hover:text-[#A4BC46]">Contact Us</a></li>
-        </ul>
-      </nav>
-      <!-- Navbar Start -->
-
-      <!-- Hero Section Start -->
-      <section class="flex items-center justify-between py-[50px]">
-        <div class="flex-col w-6/12">
-          <h1
-            class="text-8xl text-[#363958] font-normal uppercase leading-[1] font-bebas"
-          >
-            <span class="text-[#FABE4C]">Be the Genzs</span> <br />of Winter
+  
+          <div class="pt-[50px] grid gap-10 grid-rows-1 lg:grid-cols-3">
+            <!-- Product 1 -->
+            <div
+              class="bg-white px-4 py-4 shadow-lg hover:shadow-2xl rounded-2xl cursor-pointer"
+            >
+              <img
+                src="./assets/images/jacket-1.png"
+                alt=""
+                class="bg-gray-50 rounded-2xl px-4 py-4"
+              />
+              <h1 class="text-2xl text-[#363958] font-bold font-robota">
+                Yellow Coat Jacket
+              </h1>
+              <p class="text-[#3E3E3E] py-3 font-robota">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="pt-[20px] flex justify-between">
+                <h1 class="font-bold text-[1.5rem] text-[#FABE4C] font-robota">
+                  $850
+                </h1>
+                <button
+                  class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white uppercase rounded-lg px-[30px] py-[10px] font-robota"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+  
+            <!-- Product 2 -->
+            <div
+              class="bg-white px-4 py-4 shadow-lg hover:shadow-2xl rounded-2xl cursor-pointer"
+            >
+              <img
+                src="./assets/images/jacket-2.png"
+                alt=""
+                class="bg-gray-50 rounded-2xl px-4 py-4"
+              />
+              <h1 class="text-2xl text-[#363958] font-bold font-robota">
+                Ladies Jacket
+              </h1>
+              <p class="text-[#3E3E3E] py-3 font-robota">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="pt-[20px] flex justify-between">
+                <h1 class="font-bold text-[1.5rem] text-[#FABE4C] font-robota">
+                  $850
+                </h1>
+                <button
+                  class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white uppercase rounded-lg px-[30px] py-[10px]"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+  
+            <!-- Product 3 -->
+            <div
+              class="bg-white px-4 py-4 shadow-lg hover:shadow-2xl rounded-2xl cursor-pointer"
+            >
+              <img
+                src="./assets/images/jacket-3.png"
+                alt=""
+                class="bg-gray-50 rounded-2xl px-4 py-4"
+              />
+              <h1 class="text-2xl text-[#363958] font-bold font-robota">
+                Woman Leather Jacket
+              </h1>
+              <p class="text-[#3E3E3E] py-3 font-robota">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="pt-[20px] flex justify-between">
+                <h1 class="font-bold text-[1.5rem] text-[#FABE4C] font-robota">
+                  $850
+                </h1>
+                <button
+                  class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white uppercase rounded-lg px-[30px] py-[10px] font-robota"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <!-- Product 3 End-->
+          </div>
+        </section>
+        <!-- Featured Women Product Section End -->
+  
+        <!-- Featured Man Product Section Start -->
+        <section class="my-12">
+          <h1 class="text-[50px] text-[#363958] uppercase font-normal font-bebas">
+            Man Jacket
           </h1>
-          <p class="text-lg text-[#3E3E3E] mb-5 font-robota">
-            Lorem Ipsum is simply dummy text of the printing <br />and
-            typesetting industry.
-          </p>
-          <button
-            class="font-robota bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-lg px-[30px] py-[15px] text-center text-white uppercase flex gap-2 items-center"
-          >
-            <img
-              src="./assets/icons/shopping-cart 1.png"
-              alt="cart"
-              class="w-5"
-            />
-            Buy Now
-          </button>
-        </div>
-
-        <div class="w-6/12 flex justify-center">
-          <img src="./assets/images/model.png" alt="" class="" />
-        </div>
-      </section>
-      <!-- Hero Section End -->
-    </header>
-    <!-- Header End -->
-
-    <!-- Main Start -->
-    <main class="px-[135px] my-12">
-      <!-- Featured Women Product Section Start -->
-      <section class="my-12">
-        <h1 class="font-bebas text-[50px] text-[#363958] uppercase font-normal">
-          Women Jacket
-        </h1>
-
-        <div class="pt-[50px] grid gap-10 grid-cols-3">
-          <!-- Product 1 -->
-          <div
-            class="bg-white px-4 py-4 shadow-lg hover:shadow-2xl rounded-2xl cursor-pointer"
-          >
-            <img
-              src="./assets/images/jacket-1.png"
-              alt=""
-              class="bg-gray-50 rounded-2xl px-4 py-4"
-            />
-            <h1 class="text-2xl text-[#363958] font-bold font-robota">
-              Yellow Coat Jacket
-            </h1>
-            <p class="text-[#3E3E3E] py-3 font-robota">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="pt-[20px] flex justify-between">
-              <h1 class="font-bold text-[1.5rem] text-[#FABE4C] font-robota">
-                $850
+  
+          <div class="pt-[50px] grid gap-10 grid-rows-1 lg:grid-cols-3">
+            <!-- Product 1 -->
+            <div
+              class="bg-white px-4 py-4 shadow-lg hover:shadow-2xl rounded-2xl cursor-pointer"
+            >
+              <img
+                src="./assets/images/jacket-4.png"
+                alt=""
+                class="bg-gray-50 rounded-2xl px-4 py-4"
+              />
+              <h1 class="text-2xl text-[#363958] font-bold font-robota">
+                Snowboard Jacket Mens
               </h1>
-              <button
-                class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white uppercase rounded-lg px-[30px] py-[10px] font-robota"
-              >
-                Buy Now
-              </button>
+              <p class="text-[#3E3E3E] py-3 font-robota">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="pt-[20px] flex justify-between">
+                <h1 class="font-bold text-[1.5rem] text-[#FABE4C] font-robota">
+                  $850
+                </h1>
+                <button
+                  class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white uppercase rounded-lg px-[30px] py-[10px] font-robota"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+  
+            <!-- Product 2 -->
+            <div
+              class="bg-white px-4 py-4 shadow-lg hover:shadow-2xl rounded-2xl cursor-pointer"
+            >
+              <img
+                src="./assets/images/jacket-5.png"
+                alt=""
+                class="bg-gray-50 rounded-2xl px-4 py-4"
+              />
+              <h1 class="text-2xl text-[#363958] font-bold font-robota">
+                Man Leather Jackets
+              </h1>
+              <p class="text-[#3E3E3E] py-3 font-robota">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="pt-[20px] flex justify-between">
+                <h1 class="font-bold text-[1.5rem] text-[#FABE4C] font-robota">
+                  $850
+                </h1>
+                <button
+                  class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white uppercase rounded-lg px-[30px] py-[10px] font-robota"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+  
+            <!-- Product 3 -->
+            <div
+              class="bg-white px-4 py-4 shadow-lg hover:shadow-2xl rounded-2xl cursor-pointer"
+            >
+              <img
+                src="./assets/images/jacket-6.png"
+                alt=""
+                class="bg-gray-50 rounded-2xl px-4 py-4"
+              />
+              <h1 class="text-2xl text-[#363958] font-bold font-robota">
+                Man Casual Jackets
+              </h1>
+              <p class="text-[#3E3E3E] py-3 font-robota">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+              <div class="pt-[20px] flex justify-between">
+                <h1 class="font-bold text-[1.5rem] text-[#FABE4C] font-robota">
+                  $850
+                </h1>
+                <button
+                  class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white uppercase rounded-lg px-[30px] py-[10px] font-robota"
+                >
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <!-- Product 3 End -->
+          </div>
+        </section>
+        <!-- Featured Man Product Section End -->
+      </main>
+      <!-- Main End -->
+  
+      <!-- Footer Start -->
+      <footer
+        class="mx-3 lg:mx-[135px] my-[120px] flex flex-col-reverse gap-8 lg:flex-row lg:justify-between items-center"
+      >
+        <div class="flex flex-col gap-4 lg:w-[40%]">
+          <div
+            class="flex items-center gap-4 bg-white rounded-2xl px-5 py-4 shadow-xl hover:shadow-2xl cursor-pointer"
+          >
+            <div>
+              <img src="./assets/icons/house.png" alt="home" class="w-10" />
+            </div>
+            <div>
+              <h1 class="font-robota text-xl text-[#363958] font-semibold">
+                Find the Perfect Fit
+              </h1>
+              <p class="font-robota text-[#3E3E3E]">
+                Everybody is different, which is why we <br />
+                offer styles for every body.
+              </p>
             </div>
           </div>
-
-          <!-- Product 2 -->
+  
           <div
-            class="bg-white px-4 py-4 shadow-lg hover:shadow-2xl rounded-2xl cursor-pointer"
+            class="flex items-center gap-4 bg-white rounded-2xl px-5 py-4 shadow-xl hover:shadow-2xl cursor-pointer"
           >
-            <img
-              src="./assets/images/jacket-2.png"
-              alt=""
-              class="bg-gray-50 rounded-2xl px-4 py-4"
-            />
-            <h1 class="text-2xl text-[#363958] font-bold font-robota">
-              Ladies Jacket
-            </h1>
-            <p class="text-[#3E3E3E] py-3 font-robota">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="pt-[20px] flex justify-between">
-              <h1 class="font-bold text-[1.5rem] text-[#FABE4C] font-robota">
-                $850
+            <div>
+              <img src="./assets/icons/box.png" alt="box" class="w-10" />
+            </div>
+            <div>
+              <h1 class="font-robota text-xl text-[#363958] font-semibold">
+                Free Exchanges
               </h1>
-              <button
-                class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white uppercase rounded-lg px-[30px] py-[10px]"
-              >
-                Buy Now
-              </button>
+              <p class="font-robota text-[#3E3E3E]">
+                One of the many reasons you can shop <br />
+                with peace of mind.
+              </p>
             </div>
           </div>
-
-          <!-- Product 3 -->
+  
           <div
-            class="bg-white px-4 py-4 shadow-lg hover:shadow-2xl rounded-2xl cursor-pointer"
+            class="flex items-center gap-4 bg-white rounded-2xl px-5 py-4 shadow-xl hover:shadow-2xl cursor-pointer"
           >
-            <img
-              src="./assets/images/jacket-3.png"
-              alt=""
-              class="bg-gray-50 rounded-2xl px-4 py-4"
-            />
-            <h1 class="text-2xl text-[#363958] font-bold font-robota">
-              Woman Leather Jacket
-            </h1>
-            <p class="text-[#3E3E3E] py-3 font-robota">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="pt-[20px] flex justify-between">
-              <h1 class="font-bold text-[1.5rem] text-[#FABE4C] font-robota">
-                $850
+            <div>
+              <img
+                src="./assets/icons/question.png"
+                alt="question"
+                class="w-10"
+              />
+            </div>
+            <div>
+              <h1 class="font-robota text-xl text-[#363958] font-semibold">
+                Contact Our Seller
               </h1>
-              <button
-                class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white uppercase rounded-lg px-[30px] py-[10px] font-robota"
-              >
-                Buy Now
-              </button>
+              <p class="font-robota text-[#3E3E3E]">
+                They are here to help you. That's quite <br />
+                literally what we pay them for.
+              </p>
             </div>
           </div>
-          <!-- Product 3 End-->
         </div>
-      </section>
-      <!-- Featured Women Product Section End -->
-
-      <!-- Featured Man Product Section Start -->
-      <section class="my-12">
-        <h1 class="text-[50px] text-[#363958] uppercase font-normal font-bebas">
-          Man Jacket
-        </h1>
-
-        <div class="pt-[50px] grid gap-10 grid-cols-3">
-          <!-- Product 1 -->
-          <div
-            class="bg-white px-4 py-4 shadow-lg hover:shadow-2xl rounded-2xl cursor-pointer"
-          >
-            <img
-              src="./assets/images/jacket-4.png"
-              alt=""
-              class="bg-gray-50 rounded-2xl px-4 py-4"
-            />
-            <h1 class="text-2xl text-[#363958] font-bold font-robota">
-              Snowboard Jacket Mens
-            </h1>
-            <p class="text-[#3E3E3E] py-3 font-robota">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="pt-[20px] flex justify-between">
-              <h1 class="font-bold text-[1.5rem] text-[#FABE4C] font-robota">
-                $850
-              </h1>
-              <button
-                class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white uppercase rounded-lg px-[30px] py-[10px] font-robota"
-              >
-                Buy Now
-              </button>
-            </div>
-          </div>
-
-          <!-- Product 2 -->
-          <div
-            class="bg-white px-4 py-4 shadow-lg hover:shadow-2xl rounded-2xl cursor-pointer"
-          >
-            <img
-              src="./assets/images/jacket-5.png"
-              alt=""
-              class="bg-gray-50 rounded-2xl px-4 py-4"
-            />
-            <h1 class="text-2xl text-[#363958] font-bold font-robota">
-              Man Leather Jackets
-            </h1>
-            <p class="text-[#3E3E3E] py-3 font-robota">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="pt-[20px] flex justify-between">
-              <h1 class="font-bold text-[1.5rem] text-[#FABE4C] font-robota">
-                $850
-              </h1>
-              <button
-                class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white uppercase rounded-lg px-[30px] py-[10px] font-robota"
-              >
-                Buy Now
-              </button>
-            </div>
-          </div>
-
-          <!-- Product 3 -->
-          <div
-            class="bg-white px-4 py-4 shadow-lg hover:shadow-2xl rounded-2xl cursor-pointer"
-          >
-            <img
-              src="./assets/images/jacket-6.png"
-              alt=""
-              class="bg-gray-50 rounded-2xl px-4 py-4"
-            />
-            <h1 class="text-2xl text-[#363958] font-bold font-robota">
-              Man Casual Jackets
-            </h1>
-            <p class="text-[#3E3E3E] py-3 font-robota">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="pt-[20px] flex justify-between">
-              <h1 class="font-bold text-[1.5rem] text-[#FABE4C] font-robota">
-                $850
-              </h1>
-              <button
-                class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white uppercase rounded-lg px-[30px] py-[10px] font-robota"
-              >
-                Buy Now
-              </button>
-            </div>
-          </div>
-          <!-- Product 3 End -->
+  
+        <div class="lg:w-[50%]">
+          <img src="./assets/images/shopping.png" alt="shopping" />
         </div>
-      </section>
-      <!-- Featured Man Product Section End -->
-    </main>
-    <!-- Main End -->
-
-    <!-- Footer Start -->
-    <footer class="mx-[135px] my-[120px] flex justify-between items-center">
-      <div class="flex flex-col gap-4 w-[40%]">
-        <div
-          class="flex items-center gap-4 bg-white rounded-2xl px-5 py-4 shadow-xl hover:shadow-2xl cursor-pointer"
-        >
-          <div>
-            <img src="./assets/icons/house.png" alt="home" class="w-10" />
-          </div>
-          <div>
-            <h1 class="font-robota text-xl text-[#363958] font-semibold">
-              Find the Perfect Fit
-            </h1>
-            <p class="font-robota text-[#3E3E3E]">
-              Everybody is different, which is why we <br />
-              offer styles for every body.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="flex items-center gap-4 bg-white rounded-2xl px-5 py-4 shadow-xl hover:shadow-2xl cursor-pointer"
-        >
-          <div>
-            <img src="./assets/icons/box.png" alt="box" class="w-10" />
-          </div>
-          <div>
-            <h1 class="font-robota text-xl text-[#363958] font-semibold">
-              Free Exchanges
-            </h1>
-            <p class="font-robota text-[#3E3E3E]">
-              One of the many reasons you can shop <br />
-              with peace of mind.
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="flex items-center gap-4 bg-white rounded-2xl px-5 py-4 shadow-xl hover:shadow-2xl cursor-pointer"
-        >
-          <div>
-            <img
-              src="./assets/icons/question.png"
-              alt="question"
-              class="w-10"
-            />
-          </div>
-          <div>
-            <h1 class="font-robota text-xl text-[#363958] font-semibold">
-              Contact Our Seller
-            </h1>
-            <p class="font-robota text-[#3E3E3E]">
-              They are here to help you. That's quite <br />
-              literally what we pay them for.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="w-[40%]">
-        <img src="./assets/images/shopping.png" alt="shopping" />
-      </div>
-    </footer>
-    <!-- Footer End -->
-  </body>
-</html>
+      </footer>
+      <!-- Footer End -->
+    </body>
+  </html>
+  
