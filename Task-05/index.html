@@ -1,0 +1,672 @@
+<!-- =======================================================
+  * edge-iiuc-cbi-030 : Task-05
+  * Index HTML File with Tailwind CSS with daisyUI
+  * Written by Jobaieer
+  ======================================================== -->
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Dekho</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="lg:px-36">
+      <!--Navbar Section Start-->
+      <div class="navbar bg-base-100 lg:px-0 lg:py-6">
+        <div class="navbar-start flex flex-row-reverse justify-between w-full">
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              title="menu"
+              class="btn btn-ghost lg:hidden"
+            >
+              <svg
+                width="28"
+                height="18"
+                viewBox="0 0 28 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 10.5C2.82843 10.5 3.5 9.82843 3.5 9C3.5 8.17157 2.82843 7.5 2 7.5C1.17157 7.5 0.5 8.17157 0.5 9C0.5 9.82843 1.17157 10.5 2 10.5Z"
+                  fill="black"
+                />
+                <path
+                  d="M26.09 7.5H7.91C7.13128 7.5 6.5 8.13128 6.5 8.91V9.09C6.5 9.86872 7.13128 10.5 7.91 10.5H26.09C26.8687 10.5 27.5 9.86872 27.5 9.09V8.91C27.5 8.13128 26.8687 7.5 26.09 7.5Z"
+                  fill="black"
+                />
+                <path
+                  d="M26.09 15H1.91C1.13128 15 0.5 15.6313 0.5 16.41V16.59C0.5 17.3687 1.13128 18 1.91 18H26.09C26.8687 18 27.5 17.3687 27.5 16.59V16.41C27.5 15.6313 26.8687 15 26.09 15Z"
+                  fill="black"
+                />
+                <path
+                  d="M26.09 0H1.91C1.13128 0 0.5 0.631279 0.5 1.41V1.59C0.5 2.36872 1.13128 3 1.91 3H26.09C26.8687 3 27.5 2.36872 27.5 1.59V1.41C27.5 0.631279 26.8687 0 26.09 0Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-lg dropdown-content right-3 bg-base-100 rounded-box z-[1] mt-3 w-[200px] p-2 shadow flex flex-col items-center"
+            >
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>About</a></li>
+              <li>
+                <a class="btn bg-[#E76F51] border-none text-white w-[150px]"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a class=" text-2xl font-bold cursor-pointer ">Bike Dekho</a>
+        </div>
+        <!-- Navbar for larger Screen -->
+        <div class="navbar-end lg:w-full hidden lg:flex ">
+          <ul class="menu menu-horizontal items-center g:flex-row lg:gap-5 lg:justify-end lg:p-0 ">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>Contact</a></li>
+            <li><a>About</a></li>
+            <li>
+              <a class="btn bg-[#E76F51] text-white border-none">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--Navbar Section End-->
+
+      <!-- Hero Section Start -->
+      <div class="carousel w-full mt-12 rounded-lg">
+        <div id="slide1" class="carousel-item relative w-full">
+          <div
+            class="flex flex-col lg:flex-row gap-10 bg-[#FDF1EE] px-20 lg:px-24 items-center justify-center lg:justify-between py-12"
+          >
+            <div class="flex flex-col gap-10 lg:w-2/5">
+              <h1 class="font-bold text-3xl lg:text-5xl text-black">
+                Ride-on R15 V4 with Smile
+              </h1>
+              <p class="text-gray-400">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+              <a class="btn bg-[#E76F51] text-white border-none w-[150px]"
+                >Purchase</a
+              >
+            </div>
+            <div class="lg:w-[70%] flex justify-center">
+              <img src="./images/slider/bike2.png" alt="bike-1" />
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a
+              href="#slide4"
+              class="bg-transparent border-none hover:text-[#E76F51]"
+              >❮</a
+            >
+            <a
+              href="#slide2"
+              class="bg-transparent border-none hover:text-[#E76F51] text-end"
+              >❯</a
+            >
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <div
+            class="flex flex-col lg:flex-row gap-10 bg-[#FDF1EE] px-20 lg:px-24 items-center justify-center lg:justify-between py-12"
+          >
+            <div class="flex flex-col gap-10 lg:w-2/5">
+              <h1 class="font-bold text-3xl lg:text-5xl text-black">
+                Ride-on R15 V4 with Smile
+              </h1>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+              <a class="btn bg-[#E76F51] text-white border-none w-[150px]"
+                >Purchase</a
+              >
+            </div>
+            <div class="lg:w-[70%] flex justify-center">
+              <img src="./images/slider/bike1.png" alt="bike-2" />
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a
+              href="#slide1"
+              class="bg-transparent border-none hover:text-[#E76F51]"
+              >❮</a
+            >
+            <a
+              href="#slide3"
+              class="bg-transparent border-none hover:text-[#E76F51] text-end"
+              >❯</a
+            >
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <div
+            class="flex flex-col lg:flex-row gap-10 bg-[#FDF1EE] px-20 lg:px-24 items-center justify-center lg:justify-between py-12"
+          >
+            <div class="flex flex-col gap-10 lg:w-2/5">
+              <h1 class="font-bold text-3xl lg:text-5xl text-black">
+                Ride-on R15 V4 with Smile
+              </h1>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+              <a class="btn bg-[#E76F51] text-white border-none w-[150px]"
+                >Purchase</a
+              >
+            </div>
+            <div class="lg:w-[70%] flex justify-center">
+              <img src="./images/slider/bike2.png" alt="bike-1" />
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a
+              href="#slide2"
+              class="bg-transparent border-none hover:text-[#E76F51]"
+              >❮</a
+            >
+            <a
+              href="#slide4"
+              class="bg-transparent border-none hover:text-[#E76F51] text-end"
+              >❯</a
+            >
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <div
+            class="flex flex-col lg:flex-row gap-10 bg-[#FDF1EE] px-20 lg:px-24 items-center justify-center lg:justify-between py-12"
+          >
+            <div class="flex flex-col gap-10 lg:w-2/5">
+              <h1 class="font-bold text-3xl lg:text-5xl text-black">
+                Ride-on R15 V4 with Smile
+              </h1>
+              <p>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </p>
+              <a class="btn bg-[#E76F51] text-white border-none w-[150px]"
+                >Purchase</a
+              >
+            </div>
+            <div class="lg:w-[70%] flex justify-center">
+              <img src="./images/slider/bike3.png" alt="bike-3" />
+            </div>
+          </div>
+          <div
+            class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+          >
+            <a
+              href="#slide3"
+              class="bg-transparent border-none hover:text-[#E76F51]"
+              >❮</a
+            >
+            <a
+              href="#slide1"
+              class="bg-transparent border-none hover:text-[#E76F51] text-end"
+              >❯</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main class="my-24 lg:px-36">
+      <!-- Featured Bikes In This Year Section Start-->
+      <section>
+        <div class="text-center mb-20">
+          <h1 class="text-3xl font-bold mb-3">Featured Bikes In This Year</h1>
+          <p class="text-[#E76F51] font-bold">Best bike collection</p>
+          <div class="w-full flex justify-center">
+            <p class="lg:border-[#E76F51] lg:border-b-2 lg:w-[80px]"></p>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-1 justify-items-center gap-20 lg:gap-10 lg:grid-cols-3"
+        >
+          <img
+            src="./images/others/feature-bike.png"
+            alt="feature-bike"
+            class="filter grayscale hover:filter-none"
+          />
+          <img
+            src="./images/others/feature-bike.png"
+            alt="feature-bike"
+            class="filter grayscale hover:filter-none"
+          />
+          <img
+            src="./images/others/feature-bike.png"
+            alt="feature-bike"
+            class="filter grayscale hover:filter-none"
+          />
+        </div>
+      </section>
+      <!-- Featured Bikes In This Year Section End -->
+
+      <!-- Latest News Section Start -->
+      <section class="mt-24">
+        <div class="text-center mb-20">
+          <h1 class="text-3xl font-bold mb-3">Latest News</h1>
+        </div>
+        <div
+          class="grid grid-cols-1 gap-12 lg:grid-cols-3 justify-items-center"
+        >
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/others/latest1.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+              <p class="text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn bg-transparent border-[#E76F51] text-[#E76F51] hover:bg-[#E76F51] hover:text-white italic"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/others/latest2.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Motorcycles & Scooters</h2>
+              <p class="text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn bg-transparent border-[#E76F51] text-[#E76F51] hover:bg-[#E76F51] hover:text-white italic"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 w-96 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/others/latest3.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">2021 Honda CBR500R</h2>
+              <p class="text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn bg-transparent border-[#E76F51] text-[#E76F51] hover:bg-[#E76F51] hover:text-white italic"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Latest News Section End -->
+
+      <!-- Happy Clients Section Start -->
+      <section class="mt-24">
+        <div class="text-center mb-20">
+          <h1 class="text-3xl font-bold mb-3">
+            Happy <br />
+            <span class="text-[#E76F51]">Clients Says</span>
+          </h1>
+        </div>
+        <div
+          class="grid grid-cols-1 gap-12 lg:grid-cols-3 justify-items-center lg:px-7"
+        >
+          <div class="card bg-base-100 w-96 border border-gray-400">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/others/user-1.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body gap-6 items-center">
+              <h2 class="card-title justify-items-center">
+                Ducati XDIAVEL S-73
+              </h2>
+              <p class="text-gray-400 text-center">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <div class="w-24 flex flex-row">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ffc107"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ffc107"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ffc107"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ffc107"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3V376.4zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ffc107"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 343.9 194.3 340.5 187.2L287.9 78.95z"
+                  />
+                </svg>
+              </div>
+              <p class="text-[#23A6F0] font-semibold">Regina Miles</p>
+              <p class="font-semibold">Banker</p>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 w-96 border border-gray-400">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/others/user-1.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body gap-6 items-center">
+              <h2 class="card-title justify-items-center">
+                Ducati XDIAVEL S-73
+              </h2>
+              <p class="text-gray-400 text-center">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <div class="w-24 flex flex-row">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ffc107"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ffc107"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ffc107"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ffc107"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3V376.4zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ffc107"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 343.9 194.3 340.5 187.2L287.9 78.95z"
+                  />
+                </svg>
+              </div>
+              <p class="text-[#23A6F0] font-semibold">Regina Miles</p>
+              <p class="font-semibold">Banker</p>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 w-96 border border-gray-400">
+            <figure class="px-10 pt-10">
+              <img
+                src="./images/others/user-1.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body gap-6 items-center">
+              <h2 class="card-title justify-items-center">
+                Ducati XDIAVEL S-73
+              </h2>
+              <p class="text-gray-400 text-center">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <div class="w-24 flex flex-row">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ffc107"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ffc107"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ffc107"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ffc107"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3V376.4zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ffc107"
+                  viewBox="0 0 576 512"
+                >
+                  <path
+                    d="M287.9 0C297.1 0 305.5 5.25 309.5 13.52L378.1 154.8L531.4 177.5C540.4 178.8 547.8 185.1 550.7 193.7C553.5 202.4 551.2 211.9 544.8 218.2L433.6 328.4L459.9 483.9C461.4 492.9 457.7 502.1 450.2 507.4C442.8 512.7 432.1 513.4 424.9 509.1L287.9 435.9L150.1 509.1C142.9 513.4 133.1 512.7 125.6 507.4C118.2 502.1 114.5 492.9 115.1 483.9L142.2 328.4L31.11 218.2C24.65 211.9 22.36 202.4 25.2 193.7C28.03 185.1 35.5 178.8 44.49 177.5L197.7 154.8L266.3 13.52C270.4 5.249 278.7 0 287.9 0L287.9 0zM287.9 78.95L235.4 187.2C231.9 194.3 225.1 199.3 217.3 200.5L98.98 217.9L184.9 303C190.4 308.5 192.9 316.4 191.6 324.1L171.4 443.7L276.6 387.5C283.7 383.7 292.2 383.7 299.2 387.5L404.4 443.7L384.2 324.1C382.9 316.4 385.5 308.5 391 303L476.9 217.9L358.6 200.5C350.7 199.3 343.9 194.3 340.5 187.2L287.9 78.95z"
+                  />
+                </svg>
+              </div>
+              <p class="text-[#23A6F0] font-semibold">Regina Miles</p>
+              <p class="font-semibold">Banker</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Happy Clients Section End -->
+
+      <!-- FAQ Section Start -->
+      <section class="mt-24 px-4 lg:px-0">
+        <div class="text-center mb-20">
+          <h1 class="text-3xl font-bold mb-3">
+            Frequently Asked <span class="text-[#E76F51]">Questions</span>
+          </h1>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row lg:justify-between items-center gap-10"
+        >
+          <img src="./images/others/faq.png" alt="faq" class="lg:w-2/5" />
+
+          <div class="lg:w-[50%] flex flex-col gap-5">
+            <div class="collapse collapse-arrow border border-gray-300">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">
+                What are the most important things I should know about riding a
+                bike?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Safety First! Always obey the rules of the road. Obey all
+                  traffic signals, signs, and laws. Get in the mindset of
+                  “driving” your bike—not just “riding” your bike. This will
+                  help you be a more focused and legally compliant bike rider.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border border-gray-300">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                How can I tell if my helmet is old and I need a new one?
+              </div>
+              <div class="collapse-content">
+                <p>
+                  Safety First! Always obey the rules of the road. Obey all
+                  traffic signals, signs, and laws. Get in the mindset of
+                  “driving” your bike—not just “riding” your bike. This will
+                  help you be a more focused and legally compliant bike rider.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border border-gray-300">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                My bike has been in storage is it safe to ride?
+              </div>
+              <div class="collapse-content">
+                <p>Hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow border border-gray-300">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">
+                What rules should I follow when riding my bike?
+              </div>
+              <div class="collapse-content">
+                <p>Hello</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ Section End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-black pt-20 px-4 lg:px-36">
+      <div class="flex flex-col lg:flex-row gap-20 lg:justify-between">
+      <div class="flex flex-col gap-4">
+        <div class="flex flex-row justify-start gap-5">
+          <a href="#" class="text-lg font-light text-white">Download Now</a>
+          <a href="#" class="text-lg font-light text-white">License</a>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row justify-start lg:items-center gap-5"
+        >
+          <div class="flex flex-row gap-5">
+            <a href="#" class="text-lg font-light text-white">About</a>
+            <a href="#" class="text-lg font-light text-white">Features</a>
+            <a href="#" class="text-lg font-light text-white">Pricing</a>
+          </div>
+          <div class="flex flex-row gap-8">
+            <a href="#" class="text-lg font-light text-white">Careers</a>
+            <a href="#" class="text-lg font-light text-white">Help</a>
+            <a href="#" class="text-lg font-light text-white">Privacy Policy</a>
+          </div>
+        </div>
+        <p class="text-sm hidden lg:block text-white font-extralight">
+          ©️ 2024 Bike Dekho. All rights reserved.
+        </p>
+      </div>
+
+      <div class="flex flex-col gap-6 ">
+        <h1 class="text-white text-2xl">Get the App</h1>
+        <img src="./images/others/ios.png" alt="ios" class="w-40">
+        <img src="./images/others/android.png" alt="android" class="w-40">
+      </div>
+      </div>
+      <div class="text-center pt-24 pb-16">
+        <p class="text-sm lg:hidden text-white font-extralight">
+          2023 Bike Dekho. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
