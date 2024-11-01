@@ -8,9 +8,9 @@
   </head>
   <body>
     <!-- Header Start -->
-    <header class="px-4 lg:px-24">
+    <header>
       <!-- Navbar Start -->
-      <div class="navbar bg-base-100 lg:px-0 lg:py-6">
+      <div class="navbar bg-base-100 lg:py-6 px-4 lg:px-32">
         <div class="navbar-start flex flex-row-reverse justify-between w-full">
           <div class="dropdown">
             <div
@@ -79,7 +79,7 @@
         <!-- Navbar for larger Screen -->
         <div class="navbar-end lg:w-full hidden lg:flex">
           <ul
-            class="menu menu-horizontal items-center lg:flex-row lg:gap-4 lg:justify-end lg:p-0"
+            class="menu menu-horizontal items-center lg:flex-row lg:gap-2 lg:justify-end lg:p-0"
           >
             <li><a>About us</a></li>
             <li><a>Services</a></li>
@@ -98,12 +98,15 @@
       <!-- Navbar End -->
 
       <!-- Hero Section Start -->
-      <section>
-        <div class="hero min-h-screen">
+      <section class="mt-7">
+        <div class="hero h-screen-[100%]">
           <div class="hero-content flex-col lg:flex-row-reverse">
+            <h1 class=" text-4xl font-bold block lg:hidden">
+              Navigating the digital landscape for success
+            </h1>
             <img src="./images/cover.png" alt="cover" />
             <div>
-              <h1 class="text-5xl font-bold">
+              <h1 class=" text-4xl lg:text-5xl font-bold hidden lg:block">
                 Navigating the digital landscape for success
               </h1>
               <p class="py-6">
@@ -111,7 +114,7 @@
                 online through a range of services including SEO, PPC, social
                 media marketing, and content creation.
               </p>
-              <button class="btn bg-black text-white">
+              <button class="btn bg-black text-white w-full lg:w-auto">
                 Book a consultation
               </button>
             </div>
@@ -123,10 +126,10 @@
     <!-- Header End -->
 
     <!-- Main Start -->
-    <main class="px-4 lg:px-24">
+    <main >
       <!-- Sponsored Section Start -->
-      <section class="py-20">
-        <div class="grid grid-cols-3 lg:grid-cols-6 place-items-center">
+      <section class="my-20 px-4 lg:px-24">
+        <div class="grid grid-cols-3 lg:grid-cols-6 place-items-center gap-6 cursor-pointer">
           <div>
             <img
               src="./images/amazon.png"
@@ -172,6 +175,75 @@
         </div>
       </section>
       <!-- Sponsored Section End -->
+
+      <!-- Case Study Section Start -->
+      <section class="my-20 px-4 lg:px-32">
+        <!-- Title Start -->
+        <div class="flex flex-col lg:flex-row items-center gap-10 my-20">
+          <h1 class="text-4xl bg-[#B9FF66] rounded-lg p-1">Case Studies</h1>
+          <p class="text-center lg:text-left">
+            Explore Real-Life Examples of Our Proven Digital Marketing
+            <br class="hidden lg:block" />
+            Success through Our Case Studies
+          </p>
+        </div>
+        <!-- Title End -->
+
+        <div class="carousel rounded-none lg:rounded-[45px]  lg:w-[100%] flex flex-row gap-5 justify-around bg-none lg:bg-[#191A23]">
+          <div class="carousel-item  bg-[#191A23] rounded-[45px]">
+            <div class="px-12 py-14 lg:px-14 lg:py-16">
+              <p class="text-white">
+                For a local restaurant, we <br />
+                implemented a targeted PPC <br />
+                campaign that resulted in a 50% <br />
+                increase in website traffic and a <br />
+                25% increase in sales.
+              </p>
+              <h3 class="text-[#B9FF66] flex flex-row gap-3 pt-5 cursor-pointer">
+                Learn More <img src="./images/Icon.png" alt="icon" />
+              </h3>
+            </div>
+            
+          </div>
+          <div class="carousel-item  bg-[#191A23] rounded-[45px]">
+            <div class="px-10 py-12 lg:px-14 lg:py-16 ">
+              <div class="sm:border-l-0 lg:border-l-2 pl-0 lg:pl-16">
+                <p class="text-white">
+                  For a local restaurant, we <br />
+                  implemented a targeted PPC <br />
+                  campaign that resulted in a 50% <br />
+                  increase in website traffic and a <br />
+                  25% increase in sales.
+                </p>
+                <h3 class="text-[#B9FF66] flex flex-row gap-3 pt-5 cursor-pointer">
+                  Learn More <img src="./images/Icon.png" alt="icon" />
+                </h3>
+              </div>
+              
+            </div>
+           
+          </div>
+          <div class="carousel-item  bg-[#191A23] rounded-[45px]">
+            <div class="px-10 py-12 lg:px-14 lg:py-16 ">
+              <div class="sm:border-l-0 lg:border-l-2 pl-0 lg:pl-16">
+              <p class="text-white">
+                For a local restaurant, we <br />
+                implemented a targeted PPC <br />
+                campaign that resulted in a 50% <br />
+                increase in website traffic and a <br />
+                25% increase in sales.
+              </p>
+              <h3 class="text-[#B9FF66] flex flex-row gap-3 pt-5 cursor-pointer">
+                Learn More <img src="./images/Icon.png" alt="icon" />
+              </h3>
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </section>
+      <!-- Case Study Section End -->
     </main>
     <!-- Main End -->
 
