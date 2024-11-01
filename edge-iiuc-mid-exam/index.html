@@ -9,80 +9,170 @@
   <body>
     <!-- Header Start -->
     <header class="px-4 lg:px-24">
-        <!-- Navbar Start -->
-        <div class="navbar bg-base-100 lg:px-0 lg:py-6">
-            <div class="navbar-start flex flex-row-reverse justify-between w-full">
-              <div class="dropdown">
-                <div
-                  tabindex="0"
-                  role="button"
-                  title="menu"
-                  class="btn btn-ghost lg:hidden"
-                >
-                  <svg
-                    width="28"
-                    height="18"
-                    viewBox="0 0 28 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M2 10.5C2.82843 10.5 3.5 9.82843 3.5 9C3.5 8.17157 2.82843 7.5 2 7.5C1.17157 7.5 0.5 8.17157 0.5 9C0.5 9.82843 1.17157 10.5 2 10.5Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M26.09 7.5H7.91C7.13128 7.5 6.5 8.13128 6.5 8.91V9.09C6.5 9.86872 7.13128 10.5 7.91 10.5H26.09C26.8687 10.5 27.5 9.86872 27.5 9.09V8.91C27.5 8.13128 26.8687 7.5 26.09 7.5Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M26.09 15H1.91C1.13128 15 0.5 15.6313 0.5 16.41V16.59C0.5 17.3687 1.13128 18 1.91 18H26.09C26.8687 18 27.5 17.3687 27.5 16.59V16.41C27.5 15.6313 26.8687 15 26.09 15Z"
-                      fill="black"
-                    />
-                    <path
-                      d="M26.09 0H1.91C1.13128 0 0.5 0.631279 0.5 1.41V1.59C0.5 2.36872 1.13128 3 1.91 3H26.09C26.8687 3 27.5 2.36872 27.5 1.59V1.41C27.5 0.631279 26.8687 0 26.09 0Z"
-                      fill="black"
-                    />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-lg dropdown-content right-3 bg-base-100 rounded-box z-[1] mt-3 w-[200px] p-2 shadow flex flex-col items-center"
-                >
-                  <li><a>About us</a></li>
-                  <li><a>Services</a></li>
-                  <li><a>Use Cases</a></li>
-                  <li><a>Pricing</a></li>
-                  <li><a>Blog</a></li>
-                  <li>
-                    <a class="btn bg-transparent text-black border-black w-[150px]"
-                      >Request</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <a class=" text-2xl font-bold cursor-pointer "><img src="./images/logo-big.png" alt="postivus"></a>
+      <!-- Navbar Start -->
+      <div class="navbar bg-base-100 lg:px-0 lg:py-6">
+        <div class="navbar-start flex flex-row-reverse justify-between w-full">
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              title="menu"
+              class="btn btn-ghost lg:hidden"
+            >
+              <svg
+                width="28"
+                height="18"
+                viewBox="0 0 28 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2 10.5C2.82843 10.5 3.5 9.82843 3.5 9C3.5 8.17157 2.82843 7.5 2 7.5C1.17157 7.5 0.5 8.17157 0.5 9C0.5 9.82843 1.17157 10.5 2 10.5Z"
+                  fill="black"
+                />
+                <path
+                  d="M26.09 7.5H7.91C7.13128 7.5 6.5 8.13128 6.5 8.91V9.09C6.5 9.86872 7.13128 10.5 7.91 10.5H26.09C26.8687 10.5 27.5 9.86872 27.5 9.09V8.91C27.5 8.13128 26.8687 7.5 26.09 7.5Z"
+                  fill="black"
+                />
+                <path
+                  d="M26.09 15H1.91C1.13128 15 0.5 15.6313 0.5 16.41V16.59C0.5 17.3687 1.13128 18 1.91 18H26.09C26.8687 18 27.5 17.3687 27.5 16.59V16.41C27.5 15.6313 26.8687 15 26.09 15Z"
+                  fill="black"
+                />
+                <path
+                  d="M26.09 0H1.91C1.13128 0 0.5 0.631279 0.5 1.41V1.59C0.5 2.36872 1.13128 3 1.91 3H26.09C26.8687 3 27.5 2.36872 27.5 1.59V1.41C27.5 0.631279 26.8687 0 26.09 0Z"
+                  fill="black"
+                />
+              </svg>
             </div>
-            <!-- Navbar for larger Screen -->
-            <div class="navbar-end lg:w-full hidden lg:flex ">
-              <ul class="menu menu-horizontal items-center lg:flex-row lg:gap-4  lg:justify-end lg:p-0 ">
-                <li><a>About us</a></li>
-                  <li><a>Services</a></li>
-                  <li><a>Use Cases</a></li>
-                  <li><a>Pricing</a></li>
-                  <li><a>Blog</a></li>
-                  <li>
-                    <a class="btn bg-transparent text-black border-black w-[150px]"
-                      >Request a quote</a
-                    >
-                  </li>
-              </ul>
+            <ul
+              tabindex="0"
+              class="menu menu-lg dropdown-content right-3 bg-base-100 rounded-box z-[1] mt-3 w-[200px] p-2 shadow flex flex-col items-center"
+            >
+              <li><a>About us</a></li>
+              <li><a>Services</a></li>
+              <li><a>Use Cases</a></li>
+              <li><a>Pricing</a></li>
+              <li><a>Blog</a></li>
+              <li>
+                <a class="btn bg-transparent text-black border-black w-[150px]"
+                  >Request</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a class="text-4xl font-bold cursor-pointer flex flex-row gap-3"
+            ><svg
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.9986 5.53472L35.5997 0.349121L30.464 18.0001L35.5997 35.6012L17.9986 30.4655L0.347656 35.6012L5.53325 18.0001L0.347656 0.349121L17.9986 5.53472Z"
+                fill="black"
+              />
+            </svg>
+            Postivus</a
+          >
+        </div>
+        <!-- Navbar for larger Screen -->
+        <div class="navbar-end lg:w-full hidden lg:flex">
+          <ul
+            class="menu menu-horizontal items-center lg:flex-row lg:gap-4 lg:justify-end lg:p-0"
+          >
+            <li><a>About us</a></li>
+            <li><a>Services</a></li>
+            <li><a>Use Cases</a></li>
+            <li><a>Pricing</a></li>
+            <li><a>Blog</a></li>
+            <li>
+              <a class="btn bg-transparent text-black border-black w-[150px]"
+                >Request a quote</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Navbar End -->
+
+      <!-- Hero Section Start -->
+      <section>
+        <div class="hero min-h-screen">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <img src="./images/cover.png" alt="cover" />
+            <div>
+              <h1 class="text-5xl font-bold">
+                Navigating the digital landscape for success
+              </h1>
+              <p class="py-6">
+                Our digital marketing agency helps businesses grow and succeed
+                online through a range of services including SEO, PPC, social
+                media marketing, and content creation.
+              </p>
+              <button class="btn bg-black text-white">
+                Book a consultation
+              </button>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- Hero Section End -->
     </header>
     <!-- Header End -->
 
     <!-- Main Start -->
-    <main></main>
+    <main class="px-4 lg:px-24">
+      <!-- Sponsored Section Start -->
+      <section class="py-20">
+        <div class="grid grid-cols-3 lg:grid-cols-6 place-items-center">
+          <div>
+            <img
+              src="./images/amazon.png"
+              alt="amazon"
+              class="filter grayscale hover:filter-none"
+            />
+          </div>
+          <div>
+            <img
+              src="./images/dribble.png"
+              alt="dribble"
+              class="filter grayscale hover:filter-none"
+            />
+          </div>
+          <div>
+            <img
+              src="./images/hubspot.png"
+              alt="hubspot"
+              class="filter grayscale hover:filter-none"
+            />
+          </div>
+          <div>
+            <img
+              src="./images/notion.png"
+              alt="notion"
+              class="filter grayscale hover:filter-none"
+            />
+          </div>
+          <div>
+            <img
+              src="./images/netflix.png"
+              alt="netflix"
+              class="filter grayscale hover:filter-none"
+            />
+          </div>
+          <div>
+            <img
+              src="./images/zoom.png"
+              alt="zoom"
+              class="filter grayscale hover:filter-none"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Sponsored Section End -->
+    </main>
     <!-- Main End -->
 
     <!-- Footer Start -->
