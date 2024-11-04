@@ -6,19 +6,20 @@ In this repo, I share my tasks and projects of this course.
 
 ## 👨🏻‍🏫 Course Instructor
 
-[Jamil As-ad](https://github.com/jamiliiuc)
-Lecturer
-Dept of Computer Science and Engineering, IIUC.
+[Mr. Jamil As-ad](https://github.com/jamiliiuc)
+- Lecturer
+- Dept of Computer Science and Engineering, IIUC.
 
 ## 🖇️ Task Deployment
 
-|  Task-No  | Date of Submitted |      About Task      |        Tech Stack         |              Live-Server Link              |
-| :-------: | :---------------: | :------------------: | :-----------------------: | :----------------------------------------: |
-| `Task-01` |   `19/09/2024`    | Sign Up / Login Page |        HTML & CSS         |  https://iiuc-cbi-030-task01-j.surge.sh/   |
-| `Task-02` |   `27/09/2024`    |  Portfolio Project   |        HTML & CSS         | https://iiuc-cbi-030-task02-j.netlify.app/ |
-| `Task-03` |   `27/09/2024`    | Online Flowers Shop  |  HTML & CSS (Responsive)  | https://iiuc-cbi-030-task03-j.netlify.app/ |
-| `Task-04` |   `20/10/2024`    |     GenZ Fashion     | Tailwind CSS (Responsive) | https://iiuc-cbi-030-task04-j.netlify.app/ |
-| `Task-05` |   `27/10/2024`    |      Bike Dekho      |  Tailwind CSS & daisyUI   | https://iiuc-cbi-030-task05-j.netlify.app/ |
+|  Task-No   | Date of Submitted |      About Task      |        Tech Stack         |              Live-Server Link              |
+| :--------: | :---------------: | :------------------: | :-----------------------: | :----------------------------------------: |
+| `Task-01`  |   `19/09/2024`    | Sign Up / Login Page |        HTML & CSS         |  https://iiuc-cbi-030-task01-j.surge.sh/   |
+| `Task-02`  |   `27/09/2024`    |  Portfolio Project   |        HTML & CSS         | https://iiuc-cbi-030-task02-j.netlify.app/ |
+| `Task-03`  |   `27/09/2024`    | Online Flowers Shop  |  HTML & CSS (Responsive)  | https://iiuc-cbi-030-task03-j.netlify.app/ |
+| `Task-04`  |   `20/10/2024`    |     GenZ Fashion     | Tailwind CSS (Responsive) | https://iiuc-cbi-030-task04-j.netlify.app/ |
+| `Task-05`  |   `27/10/2024`    |      Bike Dekho      |  Tailwind CSS & daisyUI   | https://iiuc-cbi-030-task05-j.netlify.app/ |
+| `Mid Exam` |   `04/11/2024`    |       Postivus       |  Tailwind CSS & daisyUI   |  https://iiuc-cbi-030-mid-j.netlify.app/   |
 
 ## 🔗 Connected with @jobaieer
 
