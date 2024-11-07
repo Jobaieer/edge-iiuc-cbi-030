@@ -273,15 +273,20 @@
         <!-- Accordion Section Start -->
         <div class="flex flex-col gap-5">
           <div
-            class="collapse collapse-plus bg-[#F3F3F3] hover:bg-[#B9FF66] border-b-4 border-b-slate-900 rounded-3xl border border-slate-900 cursor-pointer"
+            class="collapse collapse-plus bg-[#F3F3F3] border-b-4 border-b-slate-900 rounded-3xl border border-slate-900 cursor-pointer"
           >
-            <input type="radio" name="my-accordion-3" checked="checked" />
+            <input
+              type="radio"
+              name="my-accordion-3"
+              class="peer"
+              checked="checked"
+            />
             <div
-              class="collapse-title text-xl font-medium flex gap-3 items-center"
+              class="collapse-title text-xl font-medium flex gap-3 items-center peer-checked:bg-[#B9FF66]"
             >
               <span class="text-4xl font-semibold">01</span>Consultation
             </div>
-            <div class="collapse-content">
+            <div class="collapse-content peer-checked:bg-[#B9FF66]">
               <p class="border-black border-t-2 py-6">
                 During the initial consultation, we will discuss your business
                 goals and objectives, target audience, and current marketing
@@ -290,17 +295,18 @@
               </p>
             </div>
           </div>
+
           <div
-            class="collapse collapse-plus bg-[#F3F3F3] hover:bg-[#B9FF66] border-b-4 border-b-slate-900 rounded-3xl border border-slate-900 cursor-pointer"
+            class="collapse collapse-plus bg-[#F3F3F3] border-b-4 border-b-slate-900 rounded-3xl border border-slate-900 cursor-pointer"
           >
-            <input type="radio" name="my-accordion-3" />
+            <input type="radio" name="my-accordion-3" class="peer" />
             <div
-              class="collapse-title text-xl font-medium flex gap-3 items-center"
+              class="collapse-title text-xl font-medium flex gap-3 items-center peer-checked:bg-[#B9FF66]"
             >
               <span class="text-4xl font-semibold">02</span>Research and
               Strategy Development
             </div>
-            <div class="collapse-content">
+            <div class="collapse-content peer-checked:bg-[#B9FF66]">
               <p class="border-black border-t-2 py-6">
                 During the initial consultation, we will discuss your business
                 goals and objectives, target audience, and current marketing
@@ -309,16 +315,17 @@
               </p>
             </div>
           </div>
+
           <div
-            class="collapse collapse-plus bg-[#F3F3F3] hover:bg-[#B9FF66] border-b-4 border-b-slate-900 rounded-3xl border border-slate-900 cursor-pointer"
+            class="collapse collapse-plus bg-[#F3F3F3] border-b-4 border-b-slate-900 rounded-3xl border border-slate-900 cursor-pointer"
           >
-            <input type="radio" name="my-accordion-3" />
+            <input type="radio" name="my-accordion-3" class="peer" />
             <div
-              class="collapse-title text-xl font-medium flex gap-3 items-center"
+              class="collapse-title text-xl font-medium flex gap-3 items-center peer-checked:bg-[#B9FF66]"
             >
               <span class="text-4xl font-semibold">03</span>Implementation
             </div>
-            <div class="collapse-content">
+            <div class="collapse-content peer-checked:bg-[#B9FF66]">
               <p class="border-black border-t-2 py-6">
                 During the initial consultation, we will discuss your business
                 goals and objectives, target audience, and current marketing
@@ -328,16 +335,16 @@
             </div>
           </div>
           <div
-            class="collapse collapse-plus bg-[#F3F3F3] hover:bg-[#B9FF66] border-b-4 border-b-slate-900 rounded-3xl border border-slate-900 cursor-pointer"
+            class="collapse collapse-plus bg-[#F3F3F3] border-b-4 border-b-slate-900 rounded-3xl border border-slate-900 cursor-pointer"
           >
-            <input type="radio" name="my-accordion-3" />
+            <input type="radio" name="my-accordion-3" class="peer" />
             <div
-              class="collapse-title text-xl font-medium flex gap-3 items-center"
+              class="collapse-title text-xl font-medium flex gap-3 items-center peer-checked:bg-[#B9FF66]"
             >
               <span class="text-4xl font-semibold">04</span>Monitoring and
               Optimization
             </div>
-            <div class="collapse-content">
+            <div class="collapse-content peer-checked:bg-[#B9FF66]">
               <p class="border-black border-t-2 py-6">
                 During the initial consultation, we will discuss your business
                 goals and objectives, target audience, and current marketing
@@ -450,7 +457,7 @@
                 <input
                   type="text"
                   placeholder="Email"
-                  class="input input-bordered bg-transparent border border-gray-200 w-[236px]"
+                  class="input input-bordered bg-transparent border text-[#B9FF66] border-gray-200 w-[236px]"
                 />
                 <button class="btn bg-[#B9FF66] join-item w-[236px]">
                   Subscribe to news
