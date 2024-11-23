@@ -7,6 +7,7 @@ In this repo, I share my tasks and projects of this course.
 ## 👨🏻‍🏫 Course Instructor
 
 [Mr. Jamil As-ad](https://github.com/jamiliiuc)
+
 - Lecturer
 - Dept of Computer Science and Engineering, IIUC.
 
@@ -20,6 +21,7 @@ In this repo, I share my tasks and projects of this course.
 | `Task-04`  |   `20/10/2024`    |     GenZ Fashion     | Tailwind CSS (Responsive) | https://iiuc-cbi-030-task04-j.netlify.app/ |
 | `Task-05`  |   `27/10/2024`    |      Bike Dekho      |  Tailwind CSS & daisyUI   | https://iiuc-cbi-030-task05-j.netlify.app/ |
 | `Mid Exam` |   `04/11/2024`    |       Postivus       |  Tailwind CSS & daisyUI   |  https://iiuc-cbi-030-mid-j.netlify.app/   |
+| `Task-06`  |   `23/11/2024`    |      Baper Bank      |     Tailwind CSS & Js     | https://iiuc-cbi-030-task06-j.netlify.app/ |
 
 ## 🔗 Connected with @jobaieer
 
