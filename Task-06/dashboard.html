@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="./css/main.css" />
   </head>
-  <body>
+  <body class="h-screen">
     <!-- header section -->
     <header class="px-2 lg:px-10 py-5">
       <div class="flex justify-between">
@@ -36,7 +36,129 @@
       </div>
     </header>
 
-    <main></main>
+    <!-- main section -->
+    <main class="px-10 bg-[#ffe1de75]">
+      <section class="flex flex-col lg:flex-row py-5 gap-5">
+        <div
+          class="bg-white w-auto lg:w-[25%] border shadow-xl rounded-2xl flex flex-col gap-2 items-center py-10"
+        >
+          <img
+            src="./assets/avatar.png"
+            alt="avatar"
+            class="w-32"
+            title="user"
+          />
+          <div class="cursor-pointer">
+            <h1 class="text-xl font-semibold">
+              Hi! <span class="text-[#fc7f69]">Mahmudul Hasan Jobaier</span>
+            </h1>
+            <p>Welcome to <span class="text-[#fc7f69]">BAPER BANK</span></p>
+          </div>
+
+          <h1
+            class="text-lg font-semibold text-slate-400 hover:text-[#ff6347] cursor-pointer"
+          >
+            Your Card
+          </h1>
+
+          <img src="./assets/card.png" alt="card" />
+          <h1
+            class="text-lg font-semibold text-slate-400 hover:text-[#ff6347] cursor-pointer"
+          >
+            Transaction Info
+          </h1>
+          <div class="bg-[#f8a394] w-[273px] h-40 rounded-3xl shadow-2xl"></div>
+        </div>
+
+        <div
+          class="w-auto lg:w-3/4 bg-white border shadow-xl rounded-2xl flex flex-col gap-20 p-10"
+        >
+          <h1
+            class="flex justify-start text-lg font-semibold text-slate-400 hover:text-[#ff6347] cursor-pointer"
+          >
+            Banking History
+          </h1>
+          <!-- Deposit Card  -->
+          <div class="flex flex-col lg:flex-row gap-20 cursor-pointer">
+            <div
+              class="bg-[#f8a394] flex justify-start w-[273px] h-40 rounded-3xl shadow-2xl"
+            >
+              <img src="./assets/deposit.png" alt="" class="w-[50%]" />
+              <div class="p-2 flex flex-col gap-3 justify-center">
+                <p
+                  class="text-2xl text-[#FF6347] hover:text-white cursor-pointer font-semibold"
+                >
+                  0$
+                </p>
+                <input
+                  type="number"
+                  name="taka"
+                  id="w-taka"
+                  class="w-28 rounded-lg"
+                  placeholder=" Type Amount"
+                />
+                <button
+                  type="submit"
+                  id="deposit"
+                  class="text-xl border hover:bg-[#FF6347] rounded-lg text-white font-semibold"
+                >
+                  Deposit
+                </button>
+              </div>
+            </div>
+
+            <!-- Withdraw Card  -->
+            <div
+              class="bg-[#f8a394] flex justify-start w-[273px] h-40 rounded-3xl shadow-2xl cursor-pointer"
+            >
+              <img src="./assets/withdrow.png" alt="" class="w-[50%]" />
+              <div class="p-2 flex flex-col gap-3 justify-center">
+                <p
+                  class="text-2xl text-[#FF6347] hover:text-white cursor-pointer font-semibold"
+                >
+                  0$
+                </p>
+                <input
+                  type="number"
+                  name="taka"
+                  id="w-taka"
+                  class="w-28 rounded-lg"
+                  placeholder=" Type Amount"
+                />
+                <button
+                  type="submit"
+                  id="deposit"
+                  class="text-xl border hover:bg-[#FF6347] rounded-lg text-white font-semibold"
+                >
+                  Withdraw
+                </button>
+              </div>
+            </div>
+
+            <!-- Total Card  -->
+            <div
+              class="bg-[#f8a394] flex justify-start w-[273px] h-40 rounded-3xl shadow-2xl cursor-pointer"
+            >
+              <img src="./assets/total.png" alt="total" class="w-[50%]" />
+              <div class="p-2 flex flex-col gap-3 justify-center">
+                <h1 class="text-white text-2xl font-semibold">Total</h1>
+                <p
+                  class="text-2xl text-[#FF6347] hover:text-white cursor-pointer font-semibold"
+                >
+                  0$
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <img
+            src="./assets/app.png"
+            alt="app"
+            class="w-auto lg:w-[50%] cursor-pointer"
+          />
+        </div>
+      </section>
+    </main>
 
     <!-- footer section -->
     <footer class="bg-[#fc7f69] px-10 py-2">
@@ -47,5 +169,8 @@
         </p>
       </div>
     </footer>
+
+    <!-- js file linked -->
+    <script type="module" src="./js/dashboard.js"></script>
   </body>
 </html>
