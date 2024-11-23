@@ -85,21 +85,18 @@
             >
               <img src="./assets/deposit.png" alt="" class="w-[50%]" />
               <div class="p-2 flex flex-col gap-3 justify-center">
-                <p
+                <label
+                  for="depositTaka"
                   class="text-2xl text-[#FF6347] hover:text-white cursor-pointer font-semibold"
-                >
-                  0$
-                </p>
+                ></label>
                 <input
                   type="number"
-                  name="taka"
-                  id="w-taka"
+                  id="depositTaka"
                   class="w-28 rounded-lg"
                   placeholder=" Type Amount"
                 />
                 <button
-                  type="submit"
-                  id="deposit"
+                  onclick="deposit()"
                   class="text-xl border hover:bg-[#FF6347] rounded-lg text-white font-semibold"
                 >
                   Deposit
@@ -113,21 +110,18 @@
             >
               <img src="./assets/withdrow.png" alt="" class="w-[50%]" />
               <div class="p-2 flex flex-col gap-3 justify-center">
-                <p
+                <label
+                  for="withdrawTaka"
                   class="text-2xl text-[#FF6347] hover:text-white cursor-pointer font-semibold"
-                >
-                  0$
-                </p>
+                ></label>
                 <input
                   type="number"
-                  name="taka"
-                  id="w-taka"
+                  id="withdrawTaka"
                   class="w-28 rounded-lg"
                   placeholder=" Type Amount"
                 />
                 <button
-                  type="submit"
-                  id="deposit"
+                  onclick="withdraw()"
                   class="text-xl border hover:bg-[#FF6347] rounded-lg text-white font-semibold"
                 >
                   Withdraw
@@ -142,11 +136,11 @@
               <img src="./assets/total.png" alt="total" class="w-[50%]" />
               <div class="p-2 flex flex-col gap-3 justify-center">
                 <h1 class="text-white text-2xl font-semibold">Total</h1>
-                <p
-                  class="text-2xl text-[#FF6347] hover:text-white cursor-pointer font-semibold"
+                <h2
+                  class="text-2xl totalTaka text-[#FF6347] hover:text-white cursor-pointer font-semibold"
                 >
-                  0$
-                </p>
+                  0
+                </h2>
               </div>
             </div>
           </div>
@@ -171,6 +165,6 @@
     </footer>
 
     <!-- js file linked -->
-    <script type="module" src="./js/dashboard.js"></script>
+    <script src="./js/dashboard.js"></script>
   </body>
 </html>
