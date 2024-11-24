@@ -4,6 +4,7 @@
   * Written by Jobaieer
   ======================================================== 
   */
+import "../css/main.css";
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault();
   //Username Validation
