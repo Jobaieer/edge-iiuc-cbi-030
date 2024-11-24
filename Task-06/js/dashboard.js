@@ -9,7 +9,7 @@ let totalTaka = 100;
 
 // Function for Update dashboard with total taka
 function updateDashboard() {
-  document.querySelector(".totalTaka").textContent = totalTaka + "৳";
+  document.querySelector("#totalTaka").textContent = totalTaka + "৳";
 }
 
 // Deposit Taka Function
