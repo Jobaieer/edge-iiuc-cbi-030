@@ -1,0 +1,53 @@
+/**
+** edge-iiuc-cbi-030 : Task-07
+** Style SCSS File
+** Written by Jobaieer
+*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Work Sans";
+}
+
+#header {
+  padding: 0 150px;
+  background-color: #f9f6e2;
+  height: 100vh;
+}
+#header .header__hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .header__hero .hero__left {
+  text-align: center;
+}
+#header .header__hero .hero__left-stitle {
+  font-size: 2rem;
+  color: #222222;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+#header .header__hero .hero__left-title--pink {
+  color: #e527b2;
+}
+#header .header__hero .hero__left-title {
+  font-size: 3rem;
+  color: #222222;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#header .header__hero .hero__left-stitle--button {
+  background-color: #e527b2;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
