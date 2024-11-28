@@ -22,6 +22,7 @@ In this repo, I share my tasks and projects of this course.
 | `Task-05`  |   `27/10/2024`    |      Bike Dekho      |  Tailwind CSS & daisyUI   | https://iiuc-cbi-030-task05-j.netlify.app/ |
 | `Mid Exam` |   `04/11/2024`    |       Postivus       |  Tailwind CSS & daisyUI   |  https://iiuc-cbi-030-mid-j.netlify.app/   |
 | `Task-06`  |   `23/11/2024`    |      Baper Bank      |     Tailwind CSS & Js     | https://iiuc-cbi-030-task06-j.netlify.app/ |
+| `Task-07`  |   `29/11/2024`    |     Summer Sale      |      SASS/SCSS & Js       | https://iiuc-cbi-030-task07-j.netlify.app/ |
 
 ## 🔗 Connected with @jobaieer
 
