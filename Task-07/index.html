@@ -47,7 +47,10 @@
         <h1 class="main__left-title">Kitchenware</h1>
         <div class="main__left-cards">
           <!-- card-1 -->
-          <div class="main__left-card">
+          <div
+            class="main__left-card"
+            onclick="addToCart('K. Accessories', 39)"
+          >
             <div class="card__upper">
               <img
                 src="./assets/images/prod1.png"
@@ -108,7 +111,10 @@
           </div>
 
           <!-- card-2 -->
-          <div class="main__left-card">
+          <div
+            class="main__left-card"
+            onclick="addToCart('2. K Accessories', 299)"
+          >
             <div class="card__upper">
               <img
                 src="./assets/images/prod2.png"
@@ -161,13 +167,13 @@
                 />
               </svg>
 
-              <h4 class="card__lower-title">K. Accessories</h4>
-              <p class="card__lower-price">39.00TK</p>
+              <h4 class="card__lower-title">K Accessories</h4>
+              <p class="card__lower-price">299.00TK</p>
             </div>
           </div>
 
           <!-- card-3  -->
-          <div class="main__left-card">
+          <div class="main__left-card" onclick="addToCart('Home Cooker', 90)">
             <div class="card__upper">
               <img
                 src="./assets/images/prod3.png"
@@ -224,8 +230,8 @@
                 />
               </svg>
 
-              <h4 class="card__lower-title">K. Accessories</h4>
-              <p class="card__lower-price">39.00TK</p>
+              <h4 class="card__lower-title">Home Cooker</h4>
+              <p class="card__lower-price">90.00TK</p>
             </div>
           </div>
         </div>
@@ -635,13 +641,11 @@
         </div>
 
         <div class="main__right-lower">
-          <div class="main__right-cart">
-            <h4 class="main__right-cart">1. Home Cooker</h4>
-            <h4 class="main__right-cart">2. Sports cates</h4>
-            <h4 class="main__right-cart">3. Home Cooker</h4>
+          <div class="main__right-cart" id="cart">
+           
           </div>
           <div class="main__right-lower--border"></div>
-          <p class="main__right-p">Total: 205.60 TK</p>
+          <p class="main__right-p" id="total"></p>
           <p class="main__right-p">Discount : 51.40TK</p>
           <p class="main__right-p">Total: 205.60 TK</p>
           <div class="main__right-lower--border"></div>

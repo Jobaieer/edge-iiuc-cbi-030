@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: rgba(13, 110, 253, 0.0509803922);
+  padding: 10px 150px;
+  height: 100vh;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
