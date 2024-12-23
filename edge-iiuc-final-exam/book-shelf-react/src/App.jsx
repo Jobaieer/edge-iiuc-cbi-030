@@ -1,12 +1,13 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <>
-      <h1 className="flex flex-row justify-center items-center h-screen text-lg font-bold  hover:text-[#61DBFB] hover:text-[5rem]">
-        Jobaieer-React Project
-      </h1>
-    </>
+    <div className="flex">
+      <Sidebar />
+      <Navbar />
+    </div>
   );
 }
 
