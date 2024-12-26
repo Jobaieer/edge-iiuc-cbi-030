@@ -5,6 +5,9 @@ import Home from "./pages/Home";
 import Search from "./pages/Search";
 import Favorites from "./pages/Favorites";
 import MyShelf from "./pages/MyShelf";
+import Ebook from './components/Ebook/Ebook.jsx';
+import Borrowedbook from './components/Borrowedbook/Borrowedbook.jsx';
+import Books from './components/Books/Books.jsx';
 
 const App = () => {
   return (
@@ -13,8 +16,12 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Search" element={<Search />} />
-          <Route path="/MyShelf" element={<MyShelf/>} />
-          <Route path="/Favorites" element={<Favorites/>} />
+          <Route path="/MyShelf" element={<MyShelf />}>
+            <Route path="/MyShelf/allbooks" element={<Books />} />
+            <Route path="/MyShelf/borrowedbook" element={<Borrowedbook />} />
+            <Route path="/MyShelf/ebook" element={<Ebook />} />
+          </Route>
+          <Route path="/Favorites" element={<Favorites/>}/>
         </Routes>
       </Dashboard>
     </Router>
