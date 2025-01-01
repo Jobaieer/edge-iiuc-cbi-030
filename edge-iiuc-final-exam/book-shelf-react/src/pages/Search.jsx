@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { IoIosCheckmarkCircle } from "react-icons/io";
-import { FaCircleXmark } from "react-icons/fa6";
+import { FaCircleXmark, FaXmark } from "react-icons/fa6";
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -62,7 +62,25 @@ const Search = () => {
     try {
       const response = await fetch(`https://openlibrary.org${bookKey}.json`);
       const data = await response.json();
-      setSelectedBook(data);
+
+      const coverImg = data.covers
+        ? `https://covers.openlibrary.org/b/id/${data.covers[0]}-L.jpg`
+        : "https://via.placeholder.com/150?text=No+Cover";
+
+      setSelectedBook({
+        id: data.key,
+        title: data.title,
+        author: data.authors
+          ? data.authors.map((author) => author.name).join(", ")
+          : "Unknown",
+        categories: data.subjects ? data.subjects.join(", ") : "Uncategorized",
+        coverImg,
+        publishYear: data.publish_date || "Unknown",
+        description:
+          typeof data.description === "string"
+            ? data.description
+            : data.description?.value || "No description available.",
+      });
     } catch (error) {
       console.error("Error fetching book details:", error);
     }
@@ -71,6 +89,14 @@ const Search = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     fetchBooks();
+  };
+
+  const handlePreview = (book) => {
+    setSelectedBook(book);
+  };
+
+  const closePreview = () => {
+    setSelectedBook(null);
   };
 
   // Handle favorite toggle
@@ -170,7 +196,7 @@ const Search = () => {
               {/* Favorite heart button */}
               <button onClick={() => handleFavorite(book)} className="mt-2">
                 {favorites.some((fav) => fav.id === book.id) ? (
-                  <FaHeart className="text-red-500" />
+                  <FaHeart className="text-orange-500" />
                 ) : (
                   <FaRegHeart className="text-gray-500" />
                 )}
@@ -188,23 +214,41 @@ const Search = () => {
       )}
 
       {selectedBook && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <div className="bg-white p-6 rounded-md w-3/4 max-w-xl">
-            <h2 className="text-xl font-bold mb-4">{selectedBook.title}</h2>
-            <p>
-              <strong>Author:</strong>{" "}
-              {selectedBook.authors?.map((author) => author.name).join(", ")}
-            </p>
-            <p>
-              <strong>Description:</strong>{" "}
-              {selectedBook.description || "No description available."}
-            </p>
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-6 rounded-md w-3/4 max-w-xl relative">
             <button
               onClick={() => setSelectedBook(null)}
-              className="px-4 py-2 mt-4 bg-red-500 text-white rounded-md hover:bg-red-600"
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
             >
-              Close
+              <FaXmark className="text-2xl hover:text-orange-500" />
             </button>
+            <div
+              className="flex flex-col items-center overflow-y-auto"
+              style={{ maxHeight: "80vh" }}
+            >
+              <img
+                src={selectedBook.coverImg}
+                alt={`${selectedBook.title} cover`}
+                className="w-40 h-auto mb-4 rounded-lg"
+              />
+              <h2 className="text-xl font-bold mb-2">{selectedBook.title}</h2>
+              <p>
+                <strong>Author:</strong> {selectedBook.author}
+              </p>
+              <p>
+                <strong>Published Year:</strong> {selectedBook.publishYear}
+              </p>
+              <p>
+                <strong>Category:</strong> {selectedBook.categories}
+              </p>
+              <p>
+                <strong>Description:</strong>{" "}
+                {selectedBook.description || "No description available."}
+              </p>
+              <p>
+                <strong>Viewed:</strong> {new Date().toLocaleString()}
+              </p>
+            </div>
           </div>
         </div>
       )}
