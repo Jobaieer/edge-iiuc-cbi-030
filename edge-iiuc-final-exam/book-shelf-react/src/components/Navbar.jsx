@@ -4,6 +4,9 @@ import { LuClock9 } from "react-icons/lu";
 import { RxCalendar } from "react-icons/rx";
 import { MdArrowDropDown } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { auth } from "../firebaseConfig"; 
+import { onAuthStateChanged } from "firebase/auth";
+import user from "../assets/user.png";
 
 const Navbar = ({ searchTerm, setSearchTerm, handleSearch }) => {
   const [currentDateTime, setCurrentDateTime] = useState({
@@ -24,6 +27,7 @@ const Navbar = ({ searchTerm, setSearchTerm, handleSearch }) => {
 
     return () => clearInterval(interval); // Cleanup on component unmount
   }, []);
+  
 
   return (
     <nav className="p-4 flex justify-between h-24 bg-[#F3F3F7] w-[100%]">
@@ -34,9 +38,9 @@ const Navbar = ({ searchTerm, setSearchTerm, handleSearch }) => {
               <option disabled selected>
                 All
               </option>
-              <option>English</option>
-              <option>Japanese</option>
-              <option>Italian</option>
+              <option>Action</option>
+              <option>Mystery</option>
+              <option>Thriller</option>
             </select>
             <form onSubmit={handleSearch} className="flex items-center gap-2">
               <input
@@ -139,7 +143,7 @@ const Navbar = ({ searchTerm, setSearchTerm, handleSearch }) => {
                 <div className="w-10 rounded-full">
                   <img
                     alt="Tailwind CSS Navbar component"
-                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                    src={user}
                   />
                 </div>
               </div>
@@ -162,7 +166,7 @@ const Navbar = ({ searchTerm, setSearchTerm, handleSearch }) => {
                 <a>Settings</a>
               </li>
               <li>
-                <a>Logout</a>
+                <a href="/Login">Logout</a>
               </li>
             </ul>
           </div>
@@ -229,7 +233,7 @@ const Navbar = ({ searchTerm, setSearchTerm, handleSearch }) => {
               <div className="w-10 rounded-full">
                 <img
                   alt="Tailwind CSS Navbar component"
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  src={user}
                 />
               </div>
             </div>
@@ -247,7 +251,7 @@ const Navbar = ({ searchTerm, setSearchTerm, handleSearch }) => {
                 <a>Settings</a>
               </li>
               <li>
-                <a>Logout</a>
+                <a href="/Login">Logout</a>
               </li>
             </ul>
           </div>
