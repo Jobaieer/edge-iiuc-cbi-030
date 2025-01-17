@@ -166,9 +166,9 @@ function Home() {
 
           <section className=" flex flex-col lg:flex-row border rounded-[16px]">
             <div className="hidden lg:block  bg-gradient-63deg rounded-l-[16px]">
-            <h2 className="text-xl font-semibold text-white h-full w-[60px]  flex items-center justify-center -rotate-90">
-              New Arrivals
-            </h2>
+              <h2 className="text-xl font-semibold text-white h-full w-[60px]  flex items-center justify-center -rotate-90">
+                New Arrivals
+              </h2>
             </div>
 
             <h2 className="text-2xl font-semibold text-white block lg:hidden mt-4  bg-gradient-63deg rounded-t-[16px] text-center">
@@ -181,7 +181,9 @@ function Home() {
 
         <section className="mt-12">
           <h1 className="text-3xl font-bold text-gray-900">Good Morning</h1>
-          <p className="mt-2 text-gray-600 font-semibold text-lg">Recommended for You</p>
+          <p className="mt-2 text-gray-600 font-semibold text-lg">
+            Recommended for You
+          </p>
           <BookList books={books.slice(0, 12)} />
         </section>
 
