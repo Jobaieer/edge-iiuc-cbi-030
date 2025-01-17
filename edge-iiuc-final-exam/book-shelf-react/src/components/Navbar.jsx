@@ -4,7 +4,7 @@ import { LuClock9 } from "react-icons/lu";
 import { RxCalendar } from "react-icons/rx";
 import { MdArrowDropDown } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { auth } from "../firebaseConfig"; 
+import { auth } from "../firebaseConfig";
 import { onAuthStateChanged } from "firebase/auth";
 import user from "../assets/user.png";
 
@@ -27,7 +27,6 @@ const Navbar = ({ searchTerm, setSearchTerm, handleSearch }) => {
 
     return () => clearInterval(interval); // Cleanup on component unmount
   }, []);
-  
 
   return (
     <nav className="p-4 flex justify-between h-24 bg-[#F3F3F7] w-[100%]">
@@ -141,10 +140,7 @@ const Navbar = ({ searchTerm, setSearchTerm, handleSearch }) => {
                 className="btn btn-ghost btn-circle avatar"
               >
                 <div className="w-10 rounded-full">
-                  <img
-                    alt="Tailwind CSS Navbar component"
-                    src={user}
-                  />
+                  <img alt="Tailwind CSS Navbar component" src={user} />
                 </div>
               </div>
               <div>
@@ -166,7 +162,7 @@ const Navbar = ({ searchTerm, setSearchTerm, handleSearch }) => {
                 <a>Settings</a>
               </li>
               <li>
-                <a href="/Login">Logout</a>
+                <Link to={"/LogIn"}>Logout</Link>
               </li>
             </ul>
           </div>
@@ -231,10 +227,7 @@ const Navbar = ({ searchTerm, setSearchTerm, handleSearch }) => {
               className="btn btn-ghost btn-circle avatar"
             >
               <div className="w-10 rounded-full">
-                <img
-                  alt="Tailwind CSS Navbar component"
-                  src={user}
-                />
+                <img alt="Tailwind CSS Navbar component" src={user} />
               </div>
             </div>
             <ul
